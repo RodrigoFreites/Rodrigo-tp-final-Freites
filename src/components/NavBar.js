@@ -1,5 +1,7 @@
-import React from 'react'
-import {Navbar,Nav, NavDropdown} from 'react-bootstrap'
+import React from 'react';
+import {Navbar,Nav, NavDropdown} from 'react-bootstrap';
+import CartWidget from './CartWidget';
+import { green } from '@material-ui/core/colors';
 
 export default function NavBar() {
     return (
@@ -19,6 +21,7 @@ export default function NavBar() {
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
+                <CartWidget style={{ color: green[50]}}  />
             </Navbar>
     )
 }
