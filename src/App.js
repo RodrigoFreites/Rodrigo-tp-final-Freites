@@ -2,8 +2,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import ItemlistContainer from './components/ItemListContainer';
-import ItemCount from "./components/ItemCount";
-import Items from "./components/Item";
+/* import ItemCount from "./components/ItemCount"; */
+import ItemList from "./components/ItemList";
+
 
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
     <div className="App">
       {<NavBar/>}
       {<ItemlistContainer greeting='Hola Mundo'/>}
-      <ItemCount/>
-      <Items />
+      {/* {<ItemCount/>} */}
+      <ItemList />
     </div>
   );
 }
